@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--表单：用于收集用户提交的信息-->
+    <!-- 表单元素 Input select textarea-->
+
+    <!--
+        form:表单标签
+            action:提交的目的地
+            method ：
+                GET:明文方式提交数据，提交的信息会在浏览器中可见
+                数据长度有限制，受限于浏览器对URL的限制 一般为255
+
+                POST:提交的信息不会在浏览器中直接显示
+                数据长度理论上无限制，但受带宽，服务器等因素影响还是存在限制
+
+        Input 
+            type -- text
+            type -- password
+
+        submit 提交
+        value 为按钮名称
+        所有提交的数据都要又form属性
+
+
+        type  -- radio : 单选框
+        利用相同的name属性实现组
+
+        type -- checkbox : 多选框
+        利用相同的name属性实现组
+        checked属性代表当前项选中
+
+        type -- file  选择文件的按钮
+
+        type -- reset 重置 恢复到默认状态
+
+        textarea -- 多行输入
+
+        select : 下拉列表
+            option : 选项
+                value : 当前项被提交时的内容
+                select : 代表当前项被选用
+
+        
+        注意：
+            1.form单词容易写错
+            2.表单元素标签，必须写在form标签内
+            3.嵌套关系混乱
+
+        表单元素：input(text,password,radio,checkbox,submit,reset,file),textarea,select
+
+        表单元素属性: name -- 提交的数据/成组
+                     value -- 提交上去的值/按钮的名称
+                     checked -- 多选框的默认选中
+                     selected -- 下拉列表的默认选中
+    -->
+
+    <form action="./html/03.html" method="POST">
+        用户名:<input type="text" name="username"><br>
+        密&nbsp;&nbsp;&nbsp;码:<input type="password" name="psw"><br>
+        电&nbsp;&nbsp;&nbsp;话:<input type="text"" name="phone"><br>
+        性&nbsp;&nbsp;&nbsp;别:<input type="radio" name="gender" value="male">男
+        <input type="radio" name="gender" value="female">女<br>
+        <input type="checkbox" name="hobby" value="eat">吃
+        <input type="checkbox" name="hobby" value="drink">喝
+        <input type="checkbox" name="hobby" value="play" checked>玩
+        <input type="checkbox" name="hobby" value="fun">乐
+        <input type="submit" value="登录" style="margin-left: 60px;"><br>
+        
+        <textarea name="desc" style="resize:none;">
+
+        </textarea>
+
+        <select name="area">
+            
+            <option>开福区</option>
+            <option>雨花区</option>
+            <option selected>望城区</option>
+            <option>岳麓区</option>
+        </select>
+            
+        
+        <input type="file" value="file"><br>
+        <input type="reset" value="重置">
+
+    </form>
+</body>
+</html>

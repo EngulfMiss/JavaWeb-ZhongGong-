@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*li{
+            /* width: 100%;
+            height: 200px;
+            background-color: aqua;
+            margin:50px; */
+            /* list-style: none; */
+            /* square:实心矩形
+                decimare:有序数字
+                None：没有标识
+                */
+            /* list-style-type: square; 
+            list-style-type:decimal;
+        } */
+
+        .a1{
+            list-style-type:decimal;
+        }
+
+        .a2{
+            list-style-type:square;
+        }
+
+        .a3{
+            list-style-type:disc;
+        }
+    </style>
+</head>
+<body>
+    <!-- 基础标签 + 表单 -->
+    <!-- div p 列表 img a -->
+
+    <!-- div : 画块标签 -->
+    <div></div>
+
+    <!-- p标签 : 文字段落标签 -->
+    
+    <p id="test">1.Spring的概述 spring是什么 spring的两大核心 spring的发展历程和优势 spring体系结构</p>
+    <p>2.程序的耦合及解耦 曾经案例中问题 工厂模式解耦</p>
+    <p>3.IOC概念和spring中的IOC spring中基于XML的IOC环境搭建</p>
+    <p>4.依赖注入(Dependency Injection)</p>
+
+    <!-- 列表： 无序列表 有序列表 自定义列表 -->
+    <!-- 无序列表 : ul + li -->
+    <!-- ul代表整个列表 ，li代表列表项-->
+    <ul class="a1">
+        <li>mvn clean    清除项目编译信息</li>
+        <li>mvn compile  编译</li>
+        <li>mvn package  打包</li>
+        <li>mvn install  安装</li>
+    </ul>
+
+    <!-- 有序标签 ol + li -->
+    <!-- ol:有序列表  li: 列表项 -->
+    <ol class="a2">
+        <li>mvn clean    清除项目编译信息</li>
+        <li>mvn compile  编译</li>
+        <li>mvn package  打包</li>
+        <li>mvn install  安装</li>
+    </ol>
+
+    <!-- ul与ol的注意事项
+        不建议在li里面添加 p，div等标签
+        ul与ol在默认表现形式上不一样，但可以通过CSS设置成一样的表现样式，不管
+        表向样式如何：ul与ol在语义上不一样，ul强调无序，ol强调有序
+    -->
+
+    <ul class="a3">
+        <li>mvn clean    清除项目编译信息</li>
+        <li>mvn compile  编译</li>
+        <li>mvn package  打包</li>
+        <li>mvn install  安装</li>
+        <li>自定义列表</li>
+    </ul>
+
+    <!--自定义列表  dl
+        自定义列表表头：dt
+        自定义列表项：dd
+    -->
+    <dl>
+        <dt>我是自定义列表的表头</dt>
+        <dd>我是自定义列表的列表项----详情内容</dd>
+    </dl>
+
+    <!--
+        应用场景：
+            无序列表：类似于新闻列表，数据列表，导航
+            有序列表：排行榜，序列
+            自定义列表：列表不规则
+    -->
+</body>
+</html>

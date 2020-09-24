@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><p><font style="font-size: 20px;">个人信息</font></p></center>
+    <table border="1" align="center" width="500px" cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="width: 50%;">
+                姓名
+            </td>
+            <td>
+                <input type="text" style="margin-left: 3px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                性别
+            </td>
+            <td>
+                <input type="radio" value="male" name="gender">男
+                <input type="radio" value="female" name="gender">女
+                <input type="radio" value="unknow" name="gender">未知
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                出生日期
+            </td>
+            <td>
+                <input type="date" name="birthday">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                身高
+            </td>
+            <td>
+                <input type="text" style="width: 30px;margin-left: 3px;"><span><font>cm</font></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                喜欢的颜色
+            </td>
+            <td>
+                <center><input type="color" style="margin-left:3px;"></center>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                男女神找照片
+            </td>
+            <td>
+                <input type="file" style="margin-left: 3px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                银行卡密码
+            </td>
+            <td>
+                <input type="password" style="margin-left: 3px;">
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>
+                喜欢的电影类型
+            </td>
+            <td>
+                <select name="film" style="width: 100px;">
+                    <option value="xiju">喜剧</option>
+                    <option value="kongbu">恐怖</option>
+                    <option value="kehuan">科幻</option>
+                    <option value="donghua">动画</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                特长
+            </td>
+            <td>
+                <input type="checkbox" name="goodat" value="游戏">游戏
+                <input type="checkbox" name="goodat" value="篮球">篮球
+                <input type="checkbox" name="goodat" value="音乐">音乐
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                如果你在做白日梦，你怎么发现你在做白日梦
+            </td>
+            <td>
+                <textarea style="margin-top:2px;margin-left:2px;width: 96%;height: 200px;"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="height: 100px;"><div style="width: 480px;margin-left:6px;height: 70px;border:2px solid rgb(121, 105, 105)">
+                <div style="margin-top: -10px;margin-left: 15px;width: 70px;height: 30px;float: left;background-color:white;">健康状况</div>
+                <div style="height: 50px;margin-top: 30px;">height:<input type="text"> width:<input type="text">
+            </div></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <center>
+                <input type="submit" value="提交信息">
+                <input type="reset" value="重置">
+                <input type="button" value="一个普通按钮">
+                <input type="button" value="我也是按钮" disabled="disabled">
+                </center>
+            </td>
+        </tr>
+        
+
+
+    </table>
+</body>
+</html>

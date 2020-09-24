@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li{
+            color: aqua;
+        }
+
+        li > a{
+            /*设置a标签的字体颜色*/
+            color:rgb(167, 84, 223);
+            /*去掉a标签的下划线*/
+            text-decoration: none;
+        }
+
+        a:hover{
+            /*鼠标滑动到a标签上时的样式*/
+            color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <!-- a标签:链接标签 
+        属性：
+            href：跳转的目标位置
+                目标位置可以是锚点
+            target：跳转的方式
+                _blank  -- 在新的窗口打开目标位置
+                _self  -- 在当前位置打开目标位置
+
+    -->
+    <ul>
+        <li><a href="https://lol.qq.com/act/a20200916spirits/index.shtml?e_code=507042" target="_self">英雄联盟官网</a></li>
+        <li><a href="https://lol.qq.com/tft/#/intro" target="_blank">云顶之奕</a></li>
+        <li><a href="https://lpl.qq.com/" target="_blank">最新赛事</a></li>
+        <li><a href="https://yz.lol.qq.com/zh_CN/" target="_blank">英雄联盟宇宙</a></li>
+        <li><a href="#buttom">底部</a></li>
+        <li><a href="#top">顶部</a></li>
+        <li><a href="./01.html#test">测试</a></li>
+    </ul>
+    
+
+    <p id="top">
+        “每过2秒，所有【永恒之森】英雄们就会成长，获得额外属性。这个效果至多可叠加5次。”
+    </p>
+
+    <p id="buttom"> 
+        “自从羽饰骑士能说会唱，他们就一直在传唱一个位于我们世界和另一个世界之间的秘密领域的故事。那是一个充满深厚魔法的地方，那里的星星会从天空中坠落，那里的土地拥有生命。”
+    </p>
+
+
+
+</body>
+</html>
