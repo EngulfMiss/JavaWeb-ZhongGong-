@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            margin-left: 20px;
+        }
+
+        .b{
+            margin-left: 50px;
+        }
+
+        .box{
+            padding-top: 50px;
+            background-color:chartreuse;
+            border:5px double red;
+            /* 四周 */
+            margin:30px;
+            /*上下，左右 中间用空格隔开*/
+            margin:30px 50px;
+        }
+
+        .box:hover{
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        盒模型：将网页中所有的元素看作盒子
+        和模型：内容+内边距+边框+外边距
+        padding 内边距
+        margin 外边距
+        border 边框
+    -->
+    <div class="box">
+    <span class="a">AAAA</span>
+    <span class="b">BBBB</span>
+    </div>
+</body>
+</html>

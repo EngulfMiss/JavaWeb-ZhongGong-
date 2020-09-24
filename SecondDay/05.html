@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height:100px;
+            margin:20px;
+            background-color: chartreuse;
+            /* float: left; */
+        }
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        li{
+            display:inline-block;
+            height: 250px;
+            width: 200px;
+            background-color: coral;
+            margin:10px;
+            /*指定当前标签是从左往右排列
+                如果当前行满了，从下一行开始从左往右排
+            */
+            float:left;
+        }
+
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+    <!--浮动:让标签在一行内按指定的规则进行排列-->
+    <!-- 块级标签 行内标签
+        块级标签：独占一行，接下来的标签从下一行开始
+            div p li dl dt dd
+
+        行内标签：多个标签共占一行
+            span,strong,em,i,b,a
+
+
+            display: inline-block  设置为行内元素
+            display: block         设置为行内元素
+    -->
+    <span>案涉及的</span>
+    <span>案涉及的</span>
+    <span>案涉及的</span>
+    <span>案涉及的</span>
+    <span>案涉及的</span>
+    <span>案涉及的</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
