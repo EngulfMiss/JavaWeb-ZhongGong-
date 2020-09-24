@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .imgs{
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            left: 0px;
+            top:0px;
+
+            animation: run 8s infinite normal 0s linear running;
+        }
+
+        .imgs:hover{
+            animation-play-state: paused;
+        }
+
+        .imgs img{
+            height: 200px;
+            width: 300px;
+        }
+
+        @keyframes run {
+            0%{left: 0px;top:0px}
+            10%{left: 400px;top:300px;transform: scale(1.2)}
+            20%{left: 600px;top:500px;transform: scale(0.5)}
+            30%{left: 800px;top:300px}
+            40%{left: 650px;top:400px;transform: scale(1)}
+            50%{left: 350px;top:600px}
+            60%{left: 200px;top:800px;transform: rotate(720deg) scale(0.5)}
+            70%{left: 500px;top:200px}
+            80%{left: 600px;top:500px;transform: rotate(-720deg) scale(1)}
+            90%{left: 700px;top:400px;transform: rotate(0)}
+            100%{left: 0px;top:0px}
+        }
+    </style>
+</head>
+<body>
+    <div class="imgs"><img src="../images/photo2.jpg"></div>
+    <span>我爱上的男爱戴u外u和via u v</span>
+</body>
+</html>

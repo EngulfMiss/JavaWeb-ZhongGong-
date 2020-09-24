@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 20px;
+            transition: transform 1s;
+            float: left;
+        }
+
+        .box1:hover{
+                /*
+                平移：
+                translateX
+                正数往左平移
+                负数往右平移*/
+            /*transform: translateX(100px);*/
+
+                /*translateY*/
+                /*正数往左下移*/
+                /*负数往右上移*/
+            /*transform: translateY(100px);*/
+
+            transform: translate(100px,100px);
+        }
+
+        /*
+            缩放：
+            scaleX(数值)
+            X轴缩放
+            scaleY(数值)
+            Y轴缩放
+            scale:
+                1个数值：XY轴同时缩放
+                2个数值：第一个数值表示X轴缩放
+                         第二个数值表示Y轴缩放
+         */
+        .box2:hover{
+            /*transform: scaleX(1.5);*/
+            /*transform: scaleY(2.5);*/
+            transform: scale(2,1.2);
+            background-color: aqua;
+        }
+
+        /*
+            旋转：
+                rotate(数值deg)
+                正数：顺时针
+                负数：逆时针
+        */
+        .box3:hover{
+            background-color: aquamarine;
+            transform: rotate(3600deg);
+            transition: transform 3s;
+        }
+
+        .box4:hover{
+            background-color: hotpink;
+            transform: scale(2) rotate(3600deg) translate(1000px);
+            transition: transform 2s;
+        }
+
+
+        /*
+            形变参照点：transform-origin:
+                关键字：
+                    left center right
+                    top center bottom
+                    1个关键字：则另一个为center
+                    2个关键字：则按关键字来确定参照点
+        */
+        .box5:hover{
+            background-color: blueviolet;
+            /*transform-origin: right;*/
+            /*transform-origin:300px -300px;*/
+            transform-origin: 50% 0%;
+            transform: rotate(3600deg);
+            transition: transform 5s;
+        }
+
+        .box6{
+            transform-origin: 50% 100%;
+            transform: scale(0.1);
+            transition: transform 4s;
+        }
+
+        .box6:active{
+            background-color: chartreuse;
+            transform-origin: 50% 0%;
+            transform: scale(1);
+            transition: transform 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>

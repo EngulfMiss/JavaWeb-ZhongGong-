@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+            /* 动画名称 动画时间 次数 执行方向 延迟时间 速度函数 状态*/
+            animation: circle 1s infinite alternate 3s ease-in running;
+        }
+
+        @keyframes run{
+            0%{
+                left: 0px;
+                top:0px;
+            }
+
+            30%{
+                left: 400px;
+                top:400px;
+            }
+
+            60%{
+                left: 800px;
+                top:0px;
+            }
+
+            90%{
+                left: 1200px;
+                top:400px;
+            }
+
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+
+        @keyframes circle {
+            0%,100%{left: 0px;top:0px}
+            25%{left:1000px;top:0px}
+            50%{left: 1000px;top:400px}
+            75%{left: 0px;top:400px}
+            /*100%{left: 0px;top:0px}*/
+        }
+
+
+        .box:hover{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        动画:animation 动画播放以及状态设置
+        动画片段 @keyframe 创建
+
+        @keyframes 动画片段名称{
+            0%~100%{对应时间点的样式值}
+        }
+
+        animation:
+            animation-name:动画片片段名称;
+            animation-duration:播放动画的时间
+            animation-iteration-count:动画片段播放的次数  (n:执行n次   infinite:执行无数次)
+
+        animation-direction:动画执行的方向
+            normal -- 正常执行
+            reverse -- 反向执行
+            alternate -- 一正一反,先正
+            alternate-reverse : 一正一反,先反
+
+        animation-delay:
+            linear -- 匀速
+            eare
+
+        animation-play-state:
+            running
+            paused
+    -->
+    <div class="box"></div>
+</body>
+</html>

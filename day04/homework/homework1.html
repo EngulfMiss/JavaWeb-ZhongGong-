@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        .content{
+            height: 500px;
+            background-color: rgba(144,188,192,0.82);
+            position: relative;
+        }
+
+        .p1{
+            width: 200px;
+            height: 320px;
+            margin-left: 20px;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .box1{
+            position: fixed;
+            left: 5%;
+            top:10%;
+            transform: scale(0.8) rotate(-24deg);
+            transition: transform 600ms;
+        }
+
+        .box1:hover{
+            transform-origin: 50% 50%;
+            transform: scale(1) rotate(0);
+            transition: transform 1s;
+        }
+
+        .word1{
+            font-size: 15px;
+            color: black;
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+
+        .box2{
+            position: fixed;
+            left: 25%;
+            top:10%;
+            transform: scale(1.2) rotate(20deg);
+            transition: transform 600ms;
+        }
+
+        .box2:hover{
+            transform-origin: 50% 50%;
+            transform: scale(1) rotate(0);
+            transition: transform 1s;
+        }
+
+        .box3{
+            position: fixed;
+            left: 45%;
+            top:10%;
+            transform: scale(0.9) rotate(-15deg);
+            transition: transform 500ms;
+        }
+
+        .box3:hover{
+            transform-origin: 50% 50%;
+            transform: scale(1) rotate(0);
+            transition: transform 1s;
+        }
+
+        .box4{
+            position: fixed;
+            left: 65%;
+            top:10%;
+            transform: scale(1.1) rotate(24deg);
+            transition: transform 500ms;
+        }
+
+        .box4:hover{
+            transform: scale(1) rotate(0);
+            transition: transform 1s;
+        }
+
+        .box5{
+            position: fixed;
+            left: 82%;
+            top:10%;
+            transform: scale(0.7) rotate(-29deg);
+            transition: transform 500ms;
+        }
+
+        .box5:hover{
+            transform: scale(1) rotate(0);
+            transition: transform 1s;
+        }
+
+        .p1 img{
+            width: 196px;
+            height: 200px;
+            position: absolute;
+            top:3px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="p1 box1">
+            <img src="./images/pic2.jpg">
+            <div class="word1">小狗照片</div>
+        </div>
+        <div class="p1 box2">
+            <img src="./images/pic3.jpg" class="img1">
+            <div class="word1">我的小狗1</div>
+        </div>
+        <div class="p1 box3">
+            <img src="./images/pic4.jpg">
+            <div class="word1">我的小狗2</div>
+        </div>
+        <div class="p1 box4">
+            <img src="./images/pic5.jpg">
+            <div class="word1">我的小狗3</div>
+        </div>
+        <div class="p1 box5">
+            <img src="./images/pic6.jpg">
+            <div class="word1">小狗照片4</div>
+        </div>
+    </div>
+</body>
+</html>
