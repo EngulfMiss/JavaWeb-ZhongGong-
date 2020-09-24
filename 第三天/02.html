@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            width:500px;
+            height:500px;
+            background-color: aqua;
+            /* 对当前元素进行相对定位，相对于本身原有的位置 */
+            position: relative;
+
+            /* 偏移量的设置 */
+            /* 如果没有偏移量，则与原有样式一样，
+                没有任何影响，供其他定位使用
+             */
+            left: 100px;
+            top:200px;
+
+            /* margin-left: 50px;
+            margin-top: 50px; */
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            /* 绝对定位，相对于定位父级进行定位 
+                原本的位置不再占位
+                html默认有定位效果
+
+                定位父级：从本身往上级遍历查找，找到第一个具有定位样式的
+                元素，该元素为当前元素的定位父级，如果一直没有找到，则HTML作为
+                当前元素的定位父级
+            */
+            /* position: absolute; */
+
+            /* 偏移量 */
+            left:50px;
+            top:50px;
+        }
+
+        .item{
+            width: 50px;
+            height: 50px;
+            background-color: coral;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        浮动
+        定位
+     -->
+     <div class="content">
+         <div class="box">
+
+            <div class="item"></div>
+         </div>
+         岸边的库都不卡u多苦啊阿萨的
+     </div>
+
+     <!-- 
+        相对定位：position:relative
+        相对于原有位置进行定位，偏移
+        原有位置依然占位
+
+
+        绝对定位：position:absolute;
+        相对于定位父级进行定位 
+            原本的位置不再占位
+            html默认有定位效果
+
+            定位父级：从本身往上级遍历查找，找到第一个具有定位样式的
+            元素，该元素为当前元素的定位父级，如果一直没有找到，则HTML作为
+            当前元素的定位父级
+
+        固定定位：position:fixed
+        相对于窗口定位
+
+    -->
+</body>
+</html>

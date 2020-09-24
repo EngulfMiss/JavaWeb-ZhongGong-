@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位练习</title>
+    <style>
+        .content{
+            width: 325px;
+            height: 450px;
+            overflow: hidden;
+            /* 设置相对定位，给后期绝对定位使用 */
+            position: relative;
+        }
+
+        .content img{
+            width: 325px;
+            height: 450px;
+        }
+
+        .tag{
+            
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            background-color:red;
+            color:white;
+            padding: 7px 5px; 
+        }
+
+        .new{
+            font-size: 6px;
+            color: wheat;
+            position: absolute;
+            right: 5px;
+            bottom: 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="./22.webp" alt="">
+        <span class="tag">VIP付费</span>
+        <span class="new">更新至完结</span>
+    </div>
+</body>
+</html>

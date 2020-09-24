@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 200px;
+            height:400px;
+            background-color: lightgray;
+            margin: 50px;
+
+            
+        }
+
+        .item:hover{
+            /* x y 模糊值 颜色 */
+            box-shadow: 10px 20px 10px rgb(39, 28, 28);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- 元素的阴影
+        box-shadow:
+            参数： x偏移 y偏移 模糊值 颜色
+            x 正向右 负向左
+            y 正向下 负向上
+    -->
+    <div class="item"></div>
+</body>
+</html>

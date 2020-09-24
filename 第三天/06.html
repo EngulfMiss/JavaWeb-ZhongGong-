@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            margin: 50px;
+        }
+
+        .box1:hover{
+            width: 1000px;
+            /*需要过渡的属性*/
+            transition-property:width;
+            /*过渡需要的时长*/
+            transition-duration: 1s;
+            /*过渡的速度方法(函数)*/
+            /*
+                linear:匀速
+                ease-in:由快到慢
+                ease-out:由慢到快
+
+            */
+            transition-timing-function: ease-out;
+
+            /*延迟过渡*/
+            transition-delay: 0.2s;
+        }
+
+        .box2:hover{
+            background-color: rgba(20, 201, 201, 0.185);
+            transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 0.5s;
+        }
+
+        .box3:active{
+            width: 1000px;
+            box-shadow: 10px 20px 15px rgb(223, 41, 198);
+            background-color: red;
+            /*空格隔开*/
+            transition-property: background-color width box-shadow;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 0.4s;
+            transform-style:initial;
+        }
+
+        .box4:hover{
+            width: 1000px;
+            /* transtion:property duration delay timing-finction */
+            transition: width 1s 0.1s linear;
+        }
+
+        /*不可省略property，duration*/
+        .box5:hover{
+            width: 1000px;
+            background-color: lawngreen;
+            transition: width 1s 0.1s linear,background-color 1s 0.1s ease-in;
+        }
+
+        .box6:hover{
+            width: 500px;
+            transition: width 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>
